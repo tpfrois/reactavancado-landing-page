@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import Container from 'components/Container'
+import Container from 'components/Container';
 
-import * as S from './styles'
+import * as S from './styles';
 
 const Footer = () => (
   <S.Wrapper>
     <Container>
       <p>
         Desenvolvido por{' '}
+        <a href="https://github.com/tpfrois">Thiago Frois (Aluno) </a>e
         <a href="https://willianjusten.com.br/">Willian Justen </a>e
         <a href="https://guilouro.dev"> Guilherme Louro</a>
       </p>
@@ -17,6 +18,6 @@ const Footer = () => (
       </p>
     </Container>
   </S.Wrapper>
-)
+);
 
-export default Footer
+export default Footer;
