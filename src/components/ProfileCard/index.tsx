@@ -1,17 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-import { GrGithub } from 'react-icons/gr';
-import { FaDribbble, FaTwitter } from 'react-icons/fa';
+import { GrGithub } from 'react-icons/gr'
+import { FaDribbble, FaTwitter } from 'react-icons/fa'
 
-import * as S from './styles';
-import { getImageURL } from 'utils/getImageURL';
-import { Author } from 'types/api';
+import * as S from './styles'
+import { getImageURL } from 'utils/getImageURL'
+import { Author } from 'types/api'
 
 const icons = {
   twitter: <FaTwitter />,
   github: <GrGithub />,
   dribbble: <FaDribbble />
-};
+}
 
 const ProfileCard: React.FC<Author> = ({
   name,
@@ -39,6 +39,6 @@ const ProfileCard: React.FC<Author> = ({
     </S.SocialLinks>
     <S.Description>{description}</S.Description>
   </S.Card>
-);
+)
 
-export default ProfileCard;
+export default ProfileCard

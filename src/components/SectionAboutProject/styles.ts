@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components';
-import media from 'styled-media-query';
+import styled, { css } from 'styled-components'
+import media from 'styled-media-query'
 
 export const Wrapper = styled.section`
   ${({ theme }) => css`
@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
       padding: ${theme.spacings.large} 0;
     `}
   `}
-`;
+`
 
 export const Container = styled.div`
   ${({ theme }) => css`
@@ -25,7 +25,7 @@ export const Container = styled.div`
       padding: 0 ${theme.spacings.medium};
     `}
   `}
-`;
+`
 
 export const Image = styled.img`
   display: block;
@@ -35,7 +35,7 @@ export const Image = styled.img`
   ${media.lessThan('medium')`
       max-width: 100%;
     `}
-`;
+`
 
 export const Text = styled.div`
   ${({ theme }) => css`
@@ -50,4 +50,4 @@ export const Text = styled.div`
       border-bottom: 2px solid ${theme.colors.primary};
     }
   `}
-`;
+`

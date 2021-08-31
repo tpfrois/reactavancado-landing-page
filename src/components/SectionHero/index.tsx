@@ -1,18 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-import Logo from 'components/Logo';
-import Button from 'components/Button';
-import * as S from './styles';
+import Logo from 'components/Logo'
+import Button from 'components/Button'
+import * as S from './styles'
 
-import Container from 'components/Container';
+import Container from 'components/Container'
 
-import { LogoProps, HeaderProps } from 'types/api';
-import { getImageURL } from 'utils/getImageURL';
+import { LogoProps, HeaderProps } from 'types/api'
+import { getImageURL } from 'utils/getImageURL'
 
 type Props = {
-  logo: LogoProps;
-  header: HeaderProps;
-};
+  logo: LogoProps
+  header: HeaderProps
+}
 
 const SectionHero = ({ logo, header }: Props) => (
   <S.Wrapper>
@@ -37,6 +37,6 @@ const SectionHero = ({ logo, header }: Props) => (
       </S.Content>
     </Container>
   </S.Wrapper>
-);
+)
 
-export default SectionHero;
+export default SectionHero

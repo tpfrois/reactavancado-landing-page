@@ -143,6 +143,6 @@ const GET_LANDING_PAGE = /* GraphQL */ `
       ...sectionFaq
     }
   }
-`;
+`
 
-export default GET_LANDING_PAGE;
+export default GET_LANDING_PAGE

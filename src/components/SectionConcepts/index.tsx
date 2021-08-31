@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Container from 'components/Container';
-import Heading from 'components/Heading';
+import Container from 'components/Container'
+import Heading from 'components/Heading'
 
-import * as S from './styles';
-import { SectionConceptsProps } from 'types/api';
+import * as S from './styles'
+import { SectionConceptsProps } from 'types/api'
 
 const SectionConcepts = ({ title, concepts }: SectionConceptsProps) => (
   <Container>
@@ -17,6 +17,6 @@ const SectionConcepts = ({ title, concepts }: SectionConceptsProps) => (
       </S.List>
     </S.Box>
   </Container>
-);
+)
 
-export default SectionConcepts;
+export default SectionConcepts

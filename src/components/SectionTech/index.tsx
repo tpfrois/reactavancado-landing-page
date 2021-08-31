@@ -1,12 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import Heading from 'components/Heading';
-import Container from 'components/Container';
+import Heading from 'components/Heading'
+import Container from 'components/Container'
 
-import icons from './content';
-import * as S from './styles';
-import { SectionTechProps } from 'types/api';
-import { getImageURL } from 'utils/getImageURL';
+import * as S from './styles'
+import { SectionTechProps } from 'types/api'
+import { getImageURL } from 'utils/getImageURL'
 
 const SectionTech = ({ title, techItems }: SectionTechProps) => (
   <S.Wrapper>
@@ -26,6 +25,6 @@ const SectionTech = ({ title, techItems }: SectionTechProps) => (
       </S.IconsContainer>
     </Container>
   </S.Wrapper>
-);
+)
 
-export default SectionTech;
+export default SectionTech

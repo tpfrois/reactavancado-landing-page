@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import Heading from 'components/Heading';
-import Container from 'components/Container';
+import Heading from 'components/Heading'
+import Container from 'components/Container'
 
-import * as S from './styles';
-import { getImageURL } from 'utils/getImageURL';
-import { SectionAboutProps } from 'types/api';
+import * as S from './styles'
+import { getImageURL } from 'utils/getImageURL'
+import { SectionAboutProps } from 'types/api'
 
 const SectionAboutProject = ({ title, content, image }: SectionAboutProps) => (
   <S.Wrapper>
@@ -23,6 +23,6 @@ const SectionAboutProject = ({ title, content, image }: SectionAboutProps) => (
       </S.Container>
     </Container>
   </S.Wrapper>
-);
+)
 
-export default SectionAboutProject;
+export default SectionAboutProject

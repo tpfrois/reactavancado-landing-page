@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import Button from 'components/Button';
+import Button from 'components/Button'
 
-import * as S from './styles';
-import { PricingBoxProps } from 'types/api';
+import * as S from './styles'
+import { PricingBoxProps } from 'types/api'
 
 const PricingBox = ({
   totalPrice,
@@ -32,6 +32,6 @@ const PricingBox = ({
       </div>
     </Button>
   </S.Box>
-);
+)
 
-export default PricingBox;
+export default PricingBox

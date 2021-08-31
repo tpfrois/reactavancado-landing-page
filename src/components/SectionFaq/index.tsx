@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import Container from 'components/Container';
-import Heading from 'components/Heading';
+import Container from 'components/Container'
+import Heading from 'components/Heading'
 
-import * as S from './styles';
-import { SectionFaqProps } from 'types/api';
+import * as S from './styles'
+import { SectionFaqProps } from 'types/api'
 
 const SectionFaq = ({ title, questions }: SectionFaqProps) => (
   <S.Wrapper>
@@ -41,6 +41,6 @@ const SectionFaq = ({ title, questions }: SectionFaqProps) => (
       </Container>
     </S.Content>
   </S.Wrapper>
-);
+)
 
-export default SectionFaq;
+export default SectionFaq

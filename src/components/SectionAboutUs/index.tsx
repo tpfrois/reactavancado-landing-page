@@ -1,13 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import Heading from 'components/Heading';
-import Container from 'components/Container';
-import ProfileCard from 'components/ProfileCard';
+import Heading from 'components/Heading'
+import Container from 'components/Container'
+import ProfileCard from 'components/ProfileCard'
 
-import content from './content';
-import * as S from './styles';
-import { SectionAboutUsProps } from 'types/api';
-import { getImageURL } from 'utils/getImageURL';
+import * as S from './styles'
+import { SectionAboutUsProps } from 'types/api'
 
 const SectionAboutUs = ({ title, authors }: SectionAboutUsProps) => (
   <Container>
@@ -26,6 +24,6 @@ const SectionAboutUs = ({ title, authors }: SectionAboutUsProps) => (
       ))}
     </S.Content>
   </Container>
-);
+)
 
-export default SectionAboutUs;
+export default SectionAboutUs

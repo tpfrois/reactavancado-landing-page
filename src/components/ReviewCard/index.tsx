@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import ResizeObserver from 'resize-observer-polyfill';
-import { Review } from 'types/api';
-import { getImageURL } from 'utils/getImageURL';
+import React, { useEffect } from 'react'
+import ResizeObserver from 'resize-observer-polyfill'
+import { Review } from 'types/api'
+import { getImageURL } from 'utils/getImageURL'
 
-import * as S from './styles';
+import * as S from './styles'
 
 const ReviewCard: React.FC<Review> = ({ id, name, photo, text }: Review) => {
   useEffect(() => {
-    const texts = document.querySelectorAll('p.description');
+    const texts = document.querySelectorAll('p.description')
 
     const observer = new ResizeObserver((entries) => {
       for (const entry of entries) {
@@ -15,12 +15,12 @@ const ReviewCard: React.FC<Review> = ({ id, name, photo, text }: Review) => {
           entry.target.scrollHeight > entry.contentRect.height + 25
             ? 'add'
             : 'remove'
-        ]('truncated');
+        ]('truncated')
       }
-    });
+    })
 
-    texts.forEach((text) => observer.observe(text));
-  });
+    texts.forEach((text) => observer.observe(text))
+  })
 
   return (
     <S.Card>
@@ -40,7 +40,7 @@ const ReviewCard: React.FC<Review> = ({ id, name, photo, text }: Review) => {
         </label>
       </S.Text>
     </S.Card>
-  );
-};
+  )
+}
 
-export default ReviewCard;
+export default ReviewCard
